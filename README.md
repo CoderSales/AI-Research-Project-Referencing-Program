@@ -10,6 +10,7 @@ AI-Research-Project-Referencing-Program-Attempt
 
 Python Regular Expression Quick Guide
 
+```RegEx
 ^        Matches the beginning of a line
 
 $        Matches the end of the line
@@ -41,7 +42,7 @@ $        Matches the end of the line
 (        Indicates where string extraction is to start
 
 )        Indicates where string extraction is to end
-
+```
 
 ## imports
 
