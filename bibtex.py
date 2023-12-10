@@ -62,10 +62,14 @@ import os.path
 
 print(your_path)
 
-
+f_name="Bibtex.bib"
 from shutil import  copy
 # f = open(r'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>', 'r', encoding="utf8")
-f = open(your_path, 'r', encoding="utf8")
+
+# f = open(your_path, 'r', encoding="utf8")
+# f = open(your_path, 'rb', encoding="utf8")
+
+f = open(os.path.join(your_path, f_name), 'r', encoding="utf8")
 for i in f.readlines():
     print(i)
     # copy(i.strip(),r"E:\Images")    
