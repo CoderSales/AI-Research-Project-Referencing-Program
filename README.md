@@ -20,9 +20,15 @@ Google Search String: [python excel](https://www.google.com/search?q=python+exce
 
 [Working with Excel Files in Python](https://www.python-excel.org/)
 
-## RegEx Tools
+## RegEx
+
+### Tools
 
 [RegExPal](https://www.regexpal.com/)
+
+### References
+
+[Python4Everybody | RegEx](https://youtu.be/ovZsvN67Glc?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&t=202)
 
 ## Modules
 
