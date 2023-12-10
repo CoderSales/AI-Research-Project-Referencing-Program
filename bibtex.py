@@ -27,7 +27,8 @@ import datetime
 
 import os
 
-root = 'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>' #  update this path
+# root = 'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>' #  update this path
+# your_path = 'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>' #  update this path
 your_path = 'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>' #  update this path
 root = your_path
 files = [(path,f) for path,_,file_list in os.walk(root) for f in file_list]
