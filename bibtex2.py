@@ -6,7 +6,6 @@ wb = Workbook()
 ws = wb.active
 import datetime
 
-
 # new code: Question:
 
 import os
@@ -15,10 +14,7 @@ import os
 # for var in os.environ:
 #     print(var)
 
-
-
 print(os.environ.get("PWD"))
-
 
 
 your_path = os.environ.get("PWD")
@@ -44,8 +40,6 @@ for i in f.readlines():
 f.close()
 
 
-
-
 # with open('BibTex.bib','wb') as output:
 #     for path, f_name in files:
 #         with open(os.path.join(path, f_name), 'rb') as input:
@@ -66,9 +60,6 @@ f.close()
 # #         with open(os.path.join(path, f_name), 'rb') as input:
 # #             shutil.copyfileobj(input, output)
 # #         output.write(b'\n') # insert extra newline between files
-
-
-
 
 
 # # old code:
