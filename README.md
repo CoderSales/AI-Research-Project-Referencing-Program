@@ -56,6 +56,8 @@ Google Search String: [python excel](https://www.google.com/search?q=python+exce
 
 [Working with Excel Files in Python](https://www.python-excel.org/)
 
+[Cite It Right](https://libguides.ul.ie/ld.php?content_id=29999147)
+
 ## RegEx
 
 ### Tools
