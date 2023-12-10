@@ -26,9 +26,9 @@ Google Search String: [python excel](https://www.google.com/search?q=python+exce
 
 [RegExPal](https://www.regexpal.com/)
 
-### References
+### RegEx References
 
-[Python4Everybody | RegEx](https://youtu.be/ovZsvN67Glc?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&t=202)
+[Python4Everybody | RegEx | RegEx Quickguide](https://youtu.be/ovZsvN67Glc?list=PLlRFEj9H3Oj7Bp8-DfGpfAfDBiblRfl5p&t=202)
 
 ## Modules
 
