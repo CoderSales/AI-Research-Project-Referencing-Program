@@ -41,7 +41,7 @@ import os.path
 
 
 from shutil import  copy
-f = open(r'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>', 'r')
+f = open(r'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>', 'r', encoding="utf8")
 for i in f.readlines():
     print(i)
     # copy(i.strip(),r"E:\Images")    
