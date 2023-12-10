@@ -29,6 +29,12 @@ import os
 root = 'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>' #  update this path
 files = [(path,f) for path,_,file_list in os.walk(root) for f in file_list]
 
+import shutil
+
+while os.path.isdir (your_path):
+    shutil.rmtree (your_path, ignore_errors=True)
+os.makedirs (your_path)
+
 
 # new code:
 
