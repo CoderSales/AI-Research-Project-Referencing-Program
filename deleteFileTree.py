@@ -1,3 +1,25 @@
+"""
+
+WARNING!!!! 
+
+REMOVES ALL FILES IN TREE 
+
+STARTING FROM 
+
+ROOT LOCATION
+
+SPECIFIED IN
+
+your_path
+
+IRREVERSIBLE ACTION!!!!
+
+NO SAFETY CHECK
+
+RUNS IMMEDIATELY!!!
+
+"""
+
 import numpy
 import pandas
 import openpyxl
