@@ -39,6 +39,16 @@ import os.path
 # print(files)
 
 
+from shutil import  copy
+f = open(r'C:\\Users\\<username>\\OneDrive\\Documents\\<etc>', 'r')
+for i in f.readlines():
+    print(i)
+    # copy(i.strip(),r"E:\Images")    
+
+f.close()
+
+
+
 
 # while os.path.isdir (your_path):
 #     # shutil.rmtree (your_path, ignore_errors=True)
