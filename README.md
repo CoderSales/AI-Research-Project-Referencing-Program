@@ -10,13 +10,13 @@ Documentation
 
 - [01st20docs](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/tree/main/documentation/01st20docs)
 
-    - has 20DEVELOPMENT.md
+    - has [20DEVELOPMENT.md](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/blob/main/documentation/01st20docs/20DEVELOPMENT.md)
 
         - describes prior state of development of project
 
 - [02nd20docs](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/tree/main/documentation/02nd20docs)
 
-    - has 21OldREADME.md
+    - has [21OldREADME.md](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/blob/main/documentation/02nd20docs/21OldREADME.md)
 
         - includes:
         
@@ -26,7 +26,7 @@ Documentation
 
         - References
 
-    - has 22DEVELOPMENT.md
+    - has [22DEVELOPMENT.md](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/blob/main/documentation/02nd20docs/22DEVELOPMENT.md)
 
         - describes prior state of development of project
 
