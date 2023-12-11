@@ -8,13 +8,13 @@ AI-Research-Project-Referencing-Program-Attempt
 
 Documentation
 
-- [01st20docs](documentation\01st20docs)
+- [01st20docs](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/tree/main/documentation/01st20docs)
 
     - has 20DEVELOPMENT.md
 
         - describes prior state of development of project
 
-- [02nd20docs](documentation\02nd20docs)
+- [02nd20docs](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/tree/main/documentation/02nd20docs)
 
     - has 21OldREADME.md
 
