@@ -1,0 +1,1 @@
+slice | https://www.w3schools.com/python/ref_func_slice.asp
