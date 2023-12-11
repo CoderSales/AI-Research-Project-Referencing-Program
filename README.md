@@ -10,9 +10,9 @@ Documentation
 
 - 01st20docs
 
-    - **has 20DEVELOPMENT.md
+    - has 20DEVELOPMENT.md
 
-        - describes current state of development of project**
+        - describes prior state of development of project
 
 - 02nd20docs
 
@@ -26,6 +26,11 @@ Documentation
 
         - References
 
+    - has 22DEVELOPMENT.md
+
+        - describes prior state of development of project
+
+        - supercedes 01st20docs/20DEVELOPMENT.md
 
 ## Content
 
