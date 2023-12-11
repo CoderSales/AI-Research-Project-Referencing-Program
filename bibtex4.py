@@ -18,11 +18,19 @@ root = your_path
 files = [(path,f) for path,_,file_list in os.walk(root) for f in file_list]
 f_name="Bibtex.bib"
 from shutil import  copy
-f = open(os.path.join(your_path, f_name), 'r', encoding="utf8")
-for i in f.readlines():
-    print(i)
-f.close()
+# f = open(os.path.join(your_path, f_name), 'r', encoding="utf8")
+# for i in f.readlines():
+#     print(i)
+# f.close()
 
-# for x in file:
+file = open("Bibtex.bib", 'r', encoding="utf8")
+
+print(file)
+
+for x in file:
+    # for y in x:
+    print(x)
+
+
 #     for y in x:
 #         if (/^journal/):
