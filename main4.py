@@ -21,7 +21,9 @@ if (line.startswith('journal')):
     remove_end = tagged[0:-2] # cut space and last curly bracket
     print("remove_end :", remove_end)
     # for line in remove_end:
+    print('line 24 is last line out')
     for k,line in enumerate(remove_end, start = 1):
+        print('line 27 is not accessed')
         print('hi')
         print("line[k] :", line[k])
         print("remove_end :", remove_end)
