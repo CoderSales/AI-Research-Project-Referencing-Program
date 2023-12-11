@@ -164,3 +164,4 @@ cython_debug/
 
 file.txt
 .venv2
+~$sample.xlsx
