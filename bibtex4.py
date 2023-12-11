@@ -11,26 +11,6 @@ import os.path
 
 import re
 
-import importlib
-
-# importlib.reload(parser)
-
-# del parser
-
-# import argparse
-# import sys
-# os_path_basename = os.path.basename(sys.argv[0])
-# print(os_path_basename)
-# argparse.ArgumentParser()
-
-from importlib.metadata import version  
-
-print(importlib.metadata)
-
-# import parser
-# importlib.reload(parser)
-
-
 # parser1.parse()
 
 your_path = os.environ.get("PWD")
