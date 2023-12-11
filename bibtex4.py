@@ -34,6 +34,11 @@ for x in file:
 
         tagged = nltk.pos_tag(tokens)
 
+        remove_end = tagged[0:-1]
+        print(remove_end)
+        print(type(remove_end))
+        for x in remove_end:
+            print(x[0])
         # print(x,sep='')
 
 
