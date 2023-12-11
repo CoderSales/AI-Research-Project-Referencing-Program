@@ -34,8 +34,10 @@ for line in file:
         tokens = nltk.word_tokenize(line)
         tagged = nltk.pos_tag(tokens)
         remove_end = tagged[0:-2] # cut space and last curly bracket
-        for line in remove_end:
-            if(x[position]!=length(whatever_passed_in_string)):
+        for k,line in enumerate(remove_end, start = 0):
+            print("line[0] :", line[0])
+            # print("line[0] :", line[0])
+            if(line[0]!=len(remove_end)): # remove_end may be line instead
                 holder+=line[0]+' '
             else:
                 holder+=line[0]
