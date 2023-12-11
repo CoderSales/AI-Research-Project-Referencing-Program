@@ -36,12 +36,9 @@ for line in file:
         tagged = nltk.pos_tag(tokens)
         remove_end = tagged[0:-1]
         for line in remove_end:
-            # print(line[0])
             holder+=line[0]
             if(re.search('^journal',holder)):
                 start_after_journal=slice(len_journal,None,1)
-                print(start_after_journal)
                 no_journal=holder[start_after_journal]
-                print(no_journal)
 print(holder)
 print(no_journal)
