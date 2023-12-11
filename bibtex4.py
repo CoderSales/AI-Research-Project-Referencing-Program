@@ -28,8 +28,6 @@ file = open("Bibtex.bib", 'r', encoding="utf8")
 print(file)
 
 for x in file:
-    # print(x)
-    # if ('/^journal/' in x):
     if ('journal' in x):
         print(x)
 
