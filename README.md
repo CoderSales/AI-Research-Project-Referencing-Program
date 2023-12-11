@@ -34,7 +34,17 @@ Documentation
 
 ## Content
 
+### Summary and Current Status
 
+```text
+TODO: (In Progress) Make an automatic referencing program.
+
+- Input: Take BibTex.bib
+
+- Output: 1 or 2 line Reference
+
+- Curent step: Format 1st line attempted: journal
+```
 
 ## References
 
