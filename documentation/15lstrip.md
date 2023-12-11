@@ -1,0 +1,1 @@
+method .lstrip() | W3Schools | https://www.w3schools.com/python/ref_string_lstrip.asp
