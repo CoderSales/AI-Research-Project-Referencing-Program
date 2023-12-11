@@ -28,7 +28,7 @@ Documentation
 
     - has [22DEVELOPMENT.md](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/blob/main/documentation/02nd20docs/22DEVELOPMENT.md)
 
-        - describes prior state of development of project
+        - describes current state of development of project
 
         - supercedes 01st20docs/20DEVELOPMENT.md
 
