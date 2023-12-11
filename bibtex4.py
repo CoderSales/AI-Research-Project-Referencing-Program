@@ -7,6 +7,8 @@ import os
 import shutil
 import os.path
 
+import nltk
+
 # import parser1
 
 import re
@@ -25,11 +27,14 @@ from shutil import  copy
 
 file = open("Bibtex.bib", 'r', encoding="utf8")
 
-print(file)
-
 for x in file:
     if ('journal' in x):
-        print(x)
+        tokens = nltk.word_tokenize(x)
+        print(tokens)
+
+        tagged = nltk.pos_tag(tokens)
+
+        # print(x,sep='')
 
 
 #     for y in x:
