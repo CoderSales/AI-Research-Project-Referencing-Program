@@ -57,13 +57,7 @@ print("line 55 (pre last for-loop-if-else-combination) : no_journal_minus_starti
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
     # if (v2[0]):
     if (k2!=len(no_journal_minus_starting_curly_bracket)):
-        # temporary test:
-        typev2 = type(v2)
-        print('typev2 =', typev2)
-        print('v2 =', v2)
-        print('v2[0] :',v2[0])
-        typev2at0=type(v2[0])
-        print('typev2at0 :',typev2at0)
+        
         # add space if there is another word
         holder2+=v2[0]+ ' '
     else:
