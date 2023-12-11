@@ -7,11 +7,31 @@ import os
 import shutil
 import os.path
 
-import parser1
+# import parser1
 
 import re
 
-parser1.parse()
+import importlib
+
+# importlib.reload(parser)
+
+# del parser
+
+# import argparse
+# import sys
+# os_path_basename = os.path.basename(sys.argv[0])
+# print(os_path_basename)
+# argparse.ArgumentParser()
+
+from importlib.metadata import version  
+
+print(importlib.metadata)
+
+# import parser
+# importlib.reload(parser)
+
+
+# parser1.parse()
 
 your_path = os.environ.get("PWD")
 root = your_path
@@ -23,6 +43,6 @@ for i in f.readlines():
     print(i)
 f.close()
 
-for x in file:
-    for y in x:
-        if (/^journal/):
+# for x in file:
+#     for y in x:
+#         if (/^journal/):
