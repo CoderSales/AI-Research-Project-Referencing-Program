@@ -27,11 +27,11 @@ from shutil import  copy
 
 file = open("Bibtex.bib", 'r', encoding="utf8")
 
-for x in file:
+for line in file:
     # if ('journal' in x):
     # if (x.startswith('journal')):
-    if (re.search('^journal',x)):
-        tokens = nltk.word_tokenize(x)
+    if (re.search('^journal',line)):
+        tokens = nltk.word_tokenize(line)
         # print(tokens)
 
         tagged = nltk.pos_tag(tokens)
@@ -40,9 +40,9 @@ for x in file:
         # print(remove_end)
         # print(type(remove_end))
         
-        for x in remove_end:
-            print(x[0])
-            x[0]
+        for line in remove_end:
+            print(line[0])
+            line[0]
         # print(x,sep='')
 
 
