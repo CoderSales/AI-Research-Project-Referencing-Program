@@ -1,3 +1,14 @@
+Documentation | https://www.nltk.org/
+
+____
+
+python -m nltk.downloader popular | https://www.nltk.org/install.html
+
+____
+
+
+____
+
 RuntimeWarning: 'nltk.downloader' found in sys.modules after import of package 'nltk', but prior to execution of 'nltk.downloader'; this may result in unpredictable behaviour | https://www.google.com/search?q=RuntimeWarning%3A+%27nltk.downloader%27+found+in+sys.modules+after+import+of+package+%27nltk%27%2C+but+prior+to+execution+of+%27nltk.downloader%27%3B+this+may+result+in+unpredictable+behaviour&rlz=1C1YTUH_enIE1084IE1084&oq=RuntimeWarning%3A+%27nltk.downloader%27+found+in+sys.modules+after+import+of+package+%27nltk%27%2C+but+prior+to+execution+of+%27nltk.downloader%27%3B+this+may+result+in+unpredictable+behaviour&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHNTUyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
 
 ____
