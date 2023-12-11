@@ -9,6 +9,8 @@ import os.path
 
 import parser1
 
+import re
+
 parser1.parse()
 
 your_path = os.environ.get("PWD")
@@ -22,4 +24,5 @@ for i in f.readlines():
 f.close()
 
 for x in file:
-        if (^journal):
+    for y in x:
+        if (/^journal/):
