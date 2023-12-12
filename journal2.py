@@ -13,11 +13,11 @@ for line in file:
         tokens = nltk.word_tokenize(line)
         tagged = nltk.pos_tag(tokens)
         remove_end = tagged[0:-2] # cut space and last curly bracket
-        for k,line in enumerate(remove_end, start = 0):
-            if(line[0]!=len(remove_end)): # remove_end may be line instead
-                holder+=line[0]+' '
+        for k,tuple_key_word in enumerate(remove_end, start = 0):
+            if(tuple_key_word[0]!=len(remove_end)): # remove_end may be line instead
+                holder+=tuple_key_word[0]+' '
             else:
-                holder+=line[0]
+                holder+=tuple_key_word[0]
             if(re.search('^journal',holder)):
                 start_after_journal=slice(len_journal,None,1)
                 no_journal=holder[start_after_journal]
