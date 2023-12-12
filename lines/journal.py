@@ -1,35 +1,38 @@
-def journal():
-    """
-    reads BibTex.bib file
-    outputs
-    journal name
-    """
-    # imports
+# def journal():
+#     """
+#     reads BibTex.bib file
+#     outputs
+#     journal name
+#     """
 
-    import nltk
-    import re
 
-    # file
 
-    f_name="Bibtex.bib"
-    file = open("Bibtex.bib", 'r', encoding="utf8")
+# imports
 
-    # end prep
+import nltk
+import re
 
-    lines=1
-    file1=file
-    for line1 in file1:
-        lines=lines+1
-        
-    print(lines, "lines in BibTex.bib")
+# file
 
-    endline=''
-    file = open("Bibtex.bib", 'r', encoding="utf8")
-    for line in file:
-        if (re.search('^journal',line)):
-            starter=line
-            line=line.lstrip('journal = {')
-            line=line.rstrip('},\n')
+f_name="Bibtex.bib"
+file = open("Bibtex.bib", 'r', encoding="utf8")
 
-            endline=line
-    print(endline)
+# end prep
+
+lines=1
+file1=file
+for line1 in file1:
+    lines=lines+1
+    
+print(lines, "lines in BibTex.bib")
+
+endline=''
+file = open("Bibtex.bib", 'r', encoding="utf8")
+for line in file:
+    if (re.search('^journal',line)):
+        starter=line
+        line=line.lstrip('journal = {')
+        line=line.rstrip('},\n')
+
+        endline=line
+print(endline)
