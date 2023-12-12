@@ -6,10 +6,18 @@ Notes on Development
 
 ## Content
 
-### bibtex4.py
+### journal.py complete
 
-Contains working code
+### TODO
 
-- not complete
+#### TODO 1
 
-**Current attempt**
+next thing to do
+
+#### TODO 2
+
+repeat TODO 1 for each element of reference
+
+#### TODO 3
+
+Use driver file
