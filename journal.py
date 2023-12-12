@@ -73,7 +73,7 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
                 print('line 71: holder2', holder2)
             # and, if it's not a comma
         elif(k2+1==len(no_journal_minus_starting_curly_bracket)):
-            holder2+=v2[0]
+            holder2+=v2[0] # experience
 
 
 
