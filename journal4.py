@@ -10,7 +10,6 @@ file = open("Bibtex.bib", 'r', encoding="utf8")
 
 # end prep
 
-holder=""
 count=1
 lines=1
 file1=file
