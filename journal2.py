@@ -1,5 +1,4 @@
 import os
-import os.path
 import nltk
 import re
 your_path = os.environ.get("PWD")
