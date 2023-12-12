@@ -1,5 +1,4 @@
 import os
-import shutil
 import os.path
 import nltk
 import re
@@ -7,7 +6,6 @@ your_path = os.environ.get("PWD")
 root = your_path
 path=root
 f_name="Bibtex.bib"
-from shutil import copy
 file = open("Bibtex.bib", 'r', encoding="utf8")
 holder=""
 len_journal=len('journal={')
