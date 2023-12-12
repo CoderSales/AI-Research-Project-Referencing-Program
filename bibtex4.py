@@ -64,20 +64,24 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
 
             if(v2 !=',' and no_journal_minus_starting_curly_bracket[k2+1]==','): # if this isn't but next element is a comma:
                 holder2+=v2[0] # wait, save space for next element coming in.
+                print('line 67: holder2',holder2)
             elif(v2!=',' and no_journal_minus_starting_curly_bracket[k2+1]!=','): # if this element is not a comma, and neither is next:
                 # (and if this is not the last, which it can't be due to precondition for loop)
                 holder2+=v2[0] + ' ' # then can add a space
+                print('line 71: holder2', holder2)
             # and, if it's not a comma
-
-
-
-
-        if(v2[0]==','):
-            # add space if there is another word
-            holder2+=v2[0]+ ' '
-        # unless there is a comma in which case no space
-        else:
+        elif(k2+1==len(no_journal_minus_starting_curly_bracket)):
             holder2+=v2[0]
+
+
+
+
+        # if(v2[0]==','):
+            # add space if there is another word
+            # holder2+=v2[0]+ ' '
+        # unless there is a comma in which case no space
+        # else:
+            # holder2+=v2[0]
     else:
         # no space if last element
         holder2+=v2[0]
