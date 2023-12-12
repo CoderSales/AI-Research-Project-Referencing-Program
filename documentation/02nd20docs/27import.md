@@ -12,3 +12,9 @@ from dirFoo.dirFoo1.foo1 import Foo1
 ```text
 Therefore every subfolder contains a __init__.py.
 ```
+
+____
+
+import part 2:
+
+https://www.geeksforgeeks.org/python-import-module-from-different-directory/
