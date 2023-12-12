@@ -35,7 +35,7 @@ for line in file:
         tagged = nltk.pos_tag(tokens)
         remove_end = tagged[0:-2] # cut space and last curly bracket
         for k,line in enumerate(remove_end, start = 0):
-            print("on line 38 is: line[0] :", line[0])
+            print("line 38: line[0] =", line[0])
             # print("line[0] :", line[0])
             if(line[0]!=len(remove_end)): # remove_end may be line instead
                 holder+=line[0]+' '
@@ -57,11 +57,21 @@ print("line 55 (pre last for-loop-if-else-combination) : no_journal_minus_starti
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
     # if (v2[0]):
     if (k2!=len(no_journal_minus_starting_curly_bracket)):
-        print('length of this loop is:', len(no_journal_minus_starting_curly_bracket))
-        if (k2+1!=len(no_journal_minus_starting_curly_bracket)):
-            print('line 63 is : no_journal_minus_starting_curly_bracket[k2] :', no_journal_minus_starting_curly_bracket[k2])
-            print('line 64 is : no_journal_minus_starting_curly_bracket[k2+1] :', no_journal_minus_starting_curly_bracket[k2+1])
-                # and, if it's not a comma
+        print('line 60 repeats: length of this loop is:', len(no_journal_minus_starting_curly_bracket))
+        if (k2+1!=len(no_journal_minus_starting_curly_bracket)): # avoids index out of range error
+            # print('line 62 is : no_journal_minus_starting_curly_bracket[k2] :', no_journal_minus_starting_curly_bracket[k2])
+            # print('line 63 is : no_journal_minus_starting_curly_bracket[k2+1] :', no_journal_minus_starting_curly_bracket[k2+1])
+
+            if(v2 !=',' and no_journal_minus_starting_curly_bracket[k2+1]==','): # if this isn't but next element is a comma:
+                holder2+=v2[0] # wait, save space for next element coming in.
+            elif(v2!=',' and no_journal_minus_starting_curly_bracket[k2+1]!=','): # if this element is not a comma, and neither is next:
+                # (and if this is not the last, which it can't be due to precondition for loop)
+                holder2+=v2[0] + ' ' # then can add a space
+            # and, if it's not a comma
+
+
+
+
         if(v2[0]==','):
             # add space if there is another word
             holder2+=v2[0]+ ' '
