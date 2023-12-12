@@ -29,4 +29,5 @@ def author():
             line=line.rstrip('},\n')
 
             endline=line
-    print(endline)
+    # print(endline)
+    return endline
