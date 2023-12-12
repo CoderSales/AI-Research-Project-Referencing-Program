@@ -87,7 +87,7 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
         # no space if last element
         holder2+=v2[0]
 
-print('line 77 (post last for-loop-if-else-combination, which assembles holder2) holder2: ', holder2 )
+print('line 77 (post last for-if, which assembles holder2) holder2: ', holder2 )
 
 # print('line 79 (post last for-loop-if-else-combination, which assembles holder2) holder2[0]: ', holder2[0] )
 
