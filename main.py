@@ -64,6 +64,12 @@ pages=pages.pages()
 
 # __________________________________
 
-reference = author + ' (' + year + ') ' + journal + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + '. ' + 'available: ' + '[accessed: ' + '].'
+import date
+
+date=date.date()
+
+# __________________________________
+
+reference = author + ' (' + year + ') ' + journal + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + '. ' + 'available: ' + '[accessed: ' + date + '].'
 
 print(reference)
