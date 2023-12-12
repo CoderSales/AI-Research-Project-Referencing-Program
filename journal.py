@@ -62,15 +62,19 @@ for k3,v3 in no_journal_minus_starting_curly_bracket:
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
     if (k2!=len(no_journal_minus_starting_curly_bracket)):
         if (k2+1!=len(no_journal_minus_starting_curly_bracket)): # avoids index out of range error
-            if(v2 !=',' and no_journal_minus_starting_curly_bracket[k2+1]==','): # if this isn't but next element is a comma:
+            print('line 65:',list_of_keys[k2+1])
+            if(v2 !=',' and list_of_keys[k2+1]==','): # if this isn't but next element is a comma:
+                
+                print('line 68 :',v2, list_of_keys[k2+1])
+                
                 holder2+=v2[0] # wait, save space for next element coming in.
-                print('line 67: holder2',holder2)
+                print('line70: holder2',holder2)
             elif(v2!=',' and no_journal_minus_starting_curly_bracket[k2+1]!=','): # if this element is not a comma, and neither is next:
                 # (and if this is not the last, which it can't be due to precondition for loop)
                 holder2+=v2[0] + ' ' # then can add a space
                 
                 # print 2 of 3:
-                print('line 71: holder2', holder2)
+                print('line 76: holder2', holder2)
             # and, if it's not a comma
         elif(k2+1==len(no_journal_minus_starting_curly_bracket)):
             holder2+=v2[0] # experience
@@ -81,4 +85,4 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
         # no space if last element
         holder2+=v2[0]
 # print 3 of 3:
-print('line 89 (post last for-if, which assembles holder2) holder2: ', holder2 )
+print('line 87 (post last for-if, which assembles holder2) holder2: ', holder2 )
