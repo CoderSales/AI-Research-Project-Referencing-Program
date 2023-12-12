@@ -17,4 +17,12 @@ ____
 
 import part 2:
 
+```python
+# importing module1 from another folder
+import Folder_2
+ 
+# calling odd_even function
+module1.odd_even(5)
+```
+
 https://www.geeksforgeeks.org/python-import-module-from-different-directory/
