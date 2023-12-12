@@ -78,6 +78,6 @@ date=date.date()
 
 # __________________________________
 
-reference = author + ' (' + year + ') ' + title + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + '[accessed: ' + date + '].'
+reference = author + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + '[accessed: ' + date + '].'
 
 print(reference)
