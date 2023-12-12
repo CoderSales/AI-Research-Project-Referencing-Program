@@ -61,7 +61,7 @@ print('line 65: list_of_keys',list_of_keys) # keys to tokens
 
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
     if (k2!=len(no_journal_minus_starting_curly_bracket)):
-        print('line 60 repeats: length of this loop is:', len(no_journal_minus_starting_curly_bracket))
+        # print('line 64 repeats: length of this loop is:', len(no_journal_minus_starting_curly_bracket)) # length is 5
         if (k2+1!=len(no_journal_minus_starting_curly_bracket)): # avoids index out of range error
             if(v2 !=',' and no_journal_minus_starting_curly_bracket[k2+1]==','): # if this isn't but next element is a comma:
                 holder2+=v2[0] # wait, save space for next element coming in.
