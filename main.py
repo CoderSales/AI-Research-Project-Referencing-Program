@@ -34,6 +34,14 @@ year=year.year()
 
 import lines
 
+from lines import title
+
+title=title.title()
+
+# __________________________________
+
+import lines
+
 from lines import journal
 
 journal=journal.journal()
@@ -70,6 +78,6 @@ date=date.date()
 
 # __________________________________
 
-reference = author + ' (' + year + ') ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + '[accessed: ' + date + '].'
+reference = author + ' (' + year + ') ' + title + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + '[accessed: ' + date + '].'
 
 print(reference)
