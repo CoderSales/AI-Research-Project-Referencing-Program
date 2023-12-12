@@ -57,7 +57,7 @@ for k3,v3 in no_journal_minus_starting_curly_bracket:
     list_of_keys.append(k3)
 
 # print 1 of 3:
-# print('line 65: list_of_keys',list_of_keys) # keys to tokens
+# print('line 65: list_of_keys',list_of_keys) # keys to tokens # ['Software', ',', 'practice', '&', 'experience']
 
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
     if (k2!=len(no_journal_minus_starting_curly_bracket)):
