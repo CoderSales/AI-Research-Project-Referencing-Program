@@ -51,7 +51,6 @@ tagged_tokens_no_journal = nltk.pos_tag(tokens_no_journal)
 no_journal_minus_starting_curly_bracket = tagged_tokens_no_journal[1:] # cut space and last curly bracket
 
 holder2=''
-# print("line 55 (pre last for-loop-if-else-combination) : no_journal_minus_starting_curly_bracket :", no_journal_minus_starting_curly_bracket)
 
 list_of_keys=[]
 for k3,v3 in no_journal_minus_starting_curly_bracket:
