@@ -1,6 +1,5 @@
 import author
 
-# delete:
 author=author.author()
 # print(author)
 
