@@ -41,3 +41,29 @@ print(z)
 https://www.geeksforgeeks.org/unpacking-a-tuple-in-python/
 
 ____
+
+Part 2:
+
+____
+
+Yahoo
+unpack list
+https://uk.search.yahoo.com/search?fr=mcafee&type=E210IE1274G0&p=unpack+list
+
+____
+
+Result 1 from last reference:
+
+```python
+colors = ['red', 'blue', 'green']
+```
+
+To assign the first, second, and third elements of the list to variables, you may assign individual elements to variables like this:
+
+```python
+red = colors[0]
+blue = colors[1]
+green = colors[2]
+```
+
+https://www.pythontutorial.net/python-basics/python-unpack-list/
