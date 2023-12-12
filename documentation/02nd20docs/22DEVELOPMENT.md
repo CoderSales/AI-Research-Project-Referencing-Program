@@ -14,6 +14,10 @@ Notes on Development
 
 next thing to do
 
+from BibTex.bib
+
+- author
+
 #### TODO 2
 
 repeat TODO 1 for each element of reference
