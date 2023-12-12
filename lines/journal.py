@@ -24,13 +24,6 @@ def journal():
 
     # end prep
 
-    lines=1
-    file1=file
-    for line1 in file1:
-        lines=lines+1
-        
-    print(lines, "lines in BibTex.bib")
-
     endline=''
     file = opener(f_name)
     for line in file:
