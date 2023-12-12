@@ -60,8 +60,8 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
         print('length of this loop is:', len(no_journal_minus_starting_curly_bracket))
         if (k2+1!=len(no_journal_minus_starting_curly_bracket)):
 
-            print('line 65 is : no_journal_minus_starting_curly_bracket[k2] :', no_journal_minus_starting_curly_bracket[k2])
-            print('line 66 is : no_journal_minus_starting_curly_bracket[k2+1] :', no_journal_minus_starting_curly_bracket[k2+1])
+            print('line 63 is : no_journal_minus_starting_curly_bracket[k2] :', no_journal_minus_starting_curly_bracket[k2])
+            print('line 64 is : no_journal_minus_starting_curly_bracket[k2+1] :', no_journal_minus_starting_curly_bracket[k2+1])
         
         # and, if it's not a comma
         if(v2[0]==','):
