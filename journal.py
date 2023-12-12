@@ -55,6 +55,8 @@ holder2=''
 list_of_keys=[]
 for k3,v3 in no_journal_minus_starting_curly_bracket:
     list_of_keys.append(k3)
+
+# print 1 of 3:
 print('line 65: list_of_keys',list_of_keys) # keys to tokens
 
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
@@ -66,20 +68,17 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
             elif(v2!=',' and no_journal_minus_starting_curly_bracket[k2+1]!=','): # if this element is not a comma, and neither is next:
                 # (and if this is not the last, which it can't be due to precondition for loop)
                 holder2+=v2[0] + ' ' # then can add a space
+                
+                # print 2 of 3:
                 print('line 71: holder2', holder2)
             # and, if it's not a comma
         elif(k2+1==len(no_journal_minus_starting_curly_bracket)):
             holder2+=v2[0]
 
 
-        # if(v2[0]==','):
-            # add space if there is another word
-            # holder2+=v2[0]+ ' '
-        # unless there is a comma in which case no space
-        # else:
-            # holder2+=v2[0]
+
     else:
         # no space if last element
         holder2+=v2[0]
-
-print('line 77 (post last for-if, which assembles holder2) holder2: ', holder2 )
+# print 3 of 3:
+print('line 89 (post last for-if, which assembles holder2) holder2: ', holder2 )
