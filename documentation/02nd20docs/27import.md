@@ -8,3 +8,7 @@ https://stackoverflow.com/questions/8953844/import-module-from-subfolder
 ```python
 from dirFoo.dirFoo1.foo1 import Foo1
 ```
+
+```text
+Therefore every subfolder contains a __init__.py.
+```
