@@ -23,9 +23,9 @@ def author():
     endline=''
     file = opener(f_name)
     for line in file:
-        if (re.search('^journal',line)):
+        if (re.search('^author',line)):
             starter=line
-            line=line.lstrip('journal = {')
+            line=line.lstrip('author = {')
             line=line.rstrip('},\n')
 
             endline=line
