@@ -60,7 +60,6 @@ print('line 65: list_of_keys',list_of_keys) # keys to tokens
 
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
     if (k2!=len(no_journal_minus_starting_curly_bracket)):
-        # print('line 64 repeats: length of this loop is:', len(no_journal_minus_starting_curly_bracket)) # length is 5
         if (k2+1!=len(no_journal_minus_starting_curly_bracket)): # avoids index out of range error
             if(v2 !=',' and no_journal_minus_starting_curly_bracket[k2+1]==','): # if this isn't but next element is a comma:
                 holder2+=v2[0] # wait, save space for next element coming in.
@@ -74,8 +73,6 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
             holder2+=v2[0]
 
 
-
-
         # if(v2[0]==','):
             # add space if there is another word
             # holder2+=v2[0]+ ' '
@@ -87,6 +84,3 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
         holder2+=v2[0]
 
 print('line 77 (post last for-if, which assembles holder2) holder2: ', holder2 )
-
-# print('line 79 (post last for-loop-if-else-combination, which assembles holder2) holder2[0]: ', holder2[0] )
-
