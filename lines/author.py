@@ -5,8 +5,13 @@ import re
 
 # file
 
-f_name="Bibtex.bib"
-file = open("Bibtex.bib", 'r', encoding="utf8")
+f_name="BibTex.bib"
+
+def opener(f_name):
+    file = open(f_name, 'r', encoding="utf8")
+    return file
+
+file=opener(f_name)
 
 # end prep
 
@@ -18,7 +23,7 @@ for line1 in file1:
 print(lines, "lines in BibTex.bib")
 
 endline=''
-file = open("Bibtex.bib", 'r', encoding="utf8")
+file = opener(f_name)
 for line in file:
     if (re.search('^journal',line)):
         starter=line
