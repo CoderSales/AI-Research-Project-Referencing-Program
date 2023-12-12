@@ -17,7 +17,11 @@ import re
 
 your_path = os.environ.get("PWD")
 root = your_path
-files = [(path,f) for path,_,file_list in os.walk(root) for f in file_list]
+path=root
+# print(path)
+# print(os.walk(root))
+# files = [(path,f) for path,_,file_list in os.walk(root) for f in file_list]
+# print(files)
 f_name="Bibtex.bib"
 from shutil import copy
 # f = open(os.path.join(your_path, f_name), 'r', encoding="utf8")
@@ -56,10 +60,12 @@ list_of_keys=[]
 for k3,v3 in no_journal_minus_starting_curly_bracket:
     list_of_keys.append(k3)
 
+print(list_of_keys)
+
 # print 1 of 3:
 # print('line 65: list_of_keys',list_of_keys) # keys to tokens # ['Software', ',', 'practice', '&', 'experience']
 
-for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
+for k2,v2 in enumerate(list_of_keys):
     if (k2!=len(list_of_keys)):
         if (k2+1!=len(list_of_keys)): # avoids index out of range error
             print('line 65:',list_of_keys[k2+1])
@@ -72,7 +78,7 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
                 print('line 72: (v2), list_of_keys[k2+1]:',v2, list_of_keys[k2+1])
                 print('line 73: so, list_of_keys[k2+1] = ', list_of_keys[k2+1])
                 
-                holder2 += v2[0] # wait, save space for next element coming in.
+                holder2 += v2 # wait, save space for next element coming in.
                 print('line 76: holder2',holder2)
 
                 print('line 78: end of 1 off block for comma next', '\n')
@@ -82,13 +88,13 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
 
             elif(v2 != ',' and list_of_keys[k2+1]!=','): # if this element is not a comma, and neither is next:
                 # (and if this is not the last, which it can't be due to precondition for loop)
-                holder2 += v2[0] + ' ' # then can add a space
+                holder2 += v2 + ' ' # then can add a space
                 
                 # print 2 of 3:
                 print('line 88: holder2', holder2)
             # and, if it's not a comma
         elif(k2+1 == len(list_of_keys)):
-            holder2 += v2[0] # experience
+            holder2 += v2 # experience
 
     else:
         # no space if last element
