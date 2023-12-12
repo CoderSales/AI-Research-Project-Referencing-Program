@@ -4,8 +4,8 @@ import author
 author=author.author()
 # print(author)
 
-for name in author:
-    print(name)
+# for name in author:
+#     print(name)
 
 # for line in file:
 #     if (re.search('^journal',line)):
