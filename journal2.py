@@ -32,21 +32,21 @@ print(list_of_keys)
 for k2,v2 in enumerate(list_of_keys):
     if (k2!=len(list_of_keys)):
         if (k2+1!=len(list_of_keys)): # avoids index out of range error
-            print('line 65:',list_of_keys[k2+1])
+            print('line 35:',list_of_keys[k2+1])
             if(v2 != ',' and list_of_keys[k2+1]==','): # if this isn't but next element is a comma:
-                print('\n', 'line 70: start of 1 off block for comma next',sep="")
-                print('line 71: (k2) :',k2)
-                print('line 72: (v2), list_of_keys[k2+1]:',v2, list_of_keys[k2+1])
-                print('line 73: so, list_of_keys[k2+1] = ', list_of_keys[k2+1])
+                print('\n', 'line 37: start of 1 off block for comma next',sep="")
+                print('line 38: (k2) :',k2)
+                print('line 39: (v2), list_of_keys[k2+1]:',v2, list_of_keys[k2+1])
+                print('line 40: so, list_of_keys[k2+1] = ', list_of_keys[k2+1])
                 holder2 += v2 # wait, save space for next element coming in.
-                print('line 76: holder2',holder2)
-                print('line 78: end of 1 off block for comma next', '\n')
+                print('line 42: holder2',holder2)
+                print('line 43: end of 1 off block for comma next', '\n')
             elif(v2 != ',' and list_of_keys[k2+1]!=','): # if this element is not a comma, and neither is next:
                 holder2 += v2 + ' ' # then can add a space
-                print('line 88: holder2', holder2)
+                print('line 46: holder2', holder2)
         elif(k2+1 == len(list_of_keys)):
             holder2 += v2 # experience
     else:
         # no space if last element
         holder2+=v2[0]
-print('line 97: (post last for-if, which assembles holder2) holder2:', holder2 )
+print('line 52: (post last for-if, which assembles holder2) holder2:', holder2 )
