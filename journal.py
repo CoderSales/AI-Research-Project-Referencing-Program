@@ -65,15 +65,18 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
             print('line 65:',list_of_keys[k2+1])
 
             # so, if the next one IS a comma, and not this one:
-
             if(v2 != ',' and list_of_keys[k2+1]==','): # if this isn't but next element is a comma:
-                print('line 70: (k2) :',k2)
-                print('line 71: (v2), list_of_keys[k2+1]:',v2, list_of_keys[k2+1])
-                print('line 72: so, list_of_keys[k2+1] = ', list_of_keys[k2+1])
+                
+                print('\n', 'line 70: start of 1 off block for comma next',sep="")
+                print('line 71: (k2) :',k2)
+                print('line 72: (v2), list_of_keys[k2+1]:',v2, list_of_keys[k2+1])
+                print('line 73: so, list_of_keys[k2+1] = ', list_of_keys[k2+1])
                 
                 holder2 += v2[0] # wait, save space for next element coming in.
-                print('line 75: holder2',holder2)
-            
+                print('line 76: holder2',holder2)
+
+                print('line 78: end of 1 off block for comma next', '\n')
+
             # then, if neither this nor next:
             # no commas in sight:
 
@@ -82,7 +85,7 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
                 holder2 += v2[0] + ' ' # then can add a space
                 
                 # print 2 of 3:
-                print('line 85: holder2', holder2)
+                print('line 88: holder2', holder2)
             # and, if it's not a comma
         elif(k2+1 == len(list_of_keys)):
             holder2 += v2[0] # experience
@@ -91,4 +94,4 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
         # no space if last element
         holder2+=v2[0]
 # print 3 of 3:
-print('line 94: (post last for-if, which assembles holder2) holder2:', holder2 )
+print('line 97: (post last for-if, which assembles holder2) holder2:', holder2 )
