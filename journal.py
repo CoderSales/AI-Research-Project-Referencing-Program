@@ -60,15 +60,23 @@ for k3,v3 in no_journal_minus_starting_curly_bracket:
 # print('line 65: list_of_keys',list_of_keys) # keys to tokens # ['Software', ',', 'practice', '&', 'experience']
 
 for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
-    if (k2!=len(no_journal_minus_starting_curly_bracket)):
-        if (k2+1!=len(no_journal_minus_starting_curly_bracket)): # avoids index out of range error
+    if (k2!=len(list_of_keys)):
+        if (k2+1!=len(list_of_keys)): # avoids index out of range error
             print('line 65:',list_of_keys[k2+1])
+
+            # so, if the next one IS a comma, and not this one:
+
             if(v2 != ',' and list_of_keys[k2+1]==','): # if this isn't but next element is a comma:
-                
-                print('line 68 :',v2, list_of_keys[k2+1])
+                print('line 67 (k2) :',k2)
+                print('line 68 (v2), list_of_keys[k2+1]:',v2, list_of_keys[k2+1])
+                print('so, list_of_keys[k2+1] = ', list_of_keys[k2+1])
                 
                 holder2 += v2[0] # wait, save space for next element coming in.
                 print('line70: holder2',holder2)
+            
+            # then, if neither this nor next:
+            # no commas in sight:
+
             elif(v2 != ',' and list_of_keys[k2+1]!=','): # if this element is not a comma, and neither is next:
                 # (and if this is not the last, which it can't be due to precondition for loop)
                 holder2 += v2[0] + ' ' # then can add a space
