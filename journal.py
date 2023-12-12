@@ -79,8 +79,6 @@ for k2,v2 in enumerate(no_journal_minus_starting_curly_bracket):
         elif(k2+1 == len(no_journal_minus_starting_curly_bracket)):
             holder2 += v2[0] # experience
 
-
-
     else:
         # no space if last element
         holder2+=v2[0]
