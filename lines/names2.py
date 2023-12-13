@@ -1,4 +1,4 @@
-def author():
+def names2():
     """
     encapsulate author program in a
     function
@@ -25,11 +25,14 @@ def author():
     for line in file:
         if (re.search('^author',line)):
             starter=line
+            # print(starter)
             line=line.lstrip('author = {')
+            line=line.lstrip(', ')
+            re.search('author = {',line)
             line=line.rstrip('},\n')
 
             endline=line
     # print(endline)
     return endline
-# author=author()
-# print(author)
+# names2=names2()
+# print(names2)
