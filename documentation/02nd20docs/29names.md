@@ -134,3 +134,21 @@ How do I disable inline suggestions in Visual Studio Code?
 https://stackoverflow.com/questions/32911977/prevent-autocomplete-in-visual-studio-code
 
 ____
+
+ImportError: attempted relative import with no known parent package | Yahoo | https://uk.search.yahoo.com/search?fr=mcafee&type=E210IE1274G0&p=ImportError%3A+attempted+relative+import+with+no+known+parent+package
+____
+
+```python
+# ecommerce/products.py
+from .database import Database
+
+def my_product():
+    p = Database(3, 2)
+```
+
+https://stackoverflow.com/questions/60593604/importerror-attempted-relative-import-with-no-known-parent-package
+____
+
+from Items.Quest1_items import *
+
+https://stackoverflow.com/questions/63312692/importerror-attempted-relative-import-with-no-known-parent-package
