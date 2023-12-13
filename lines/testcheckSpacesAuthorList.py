@@ -97,18 +97,18 @@ rebuiltFirstNamesList = rebuildAllInstances(allfirstnames)
 
 def getFirstLetter(allnames, index):
     allnames=returnallnames(allnames)
-    print('tcSAL 100: allnames, len',allnames, len(allnames))
+    # print('tcSAL 100: allnames, len',allnames, len(allnames))
     for firstname2 in allnames: # firstname2 ~= Gunter
         # print('tcSAL 102 firstname2:',firstname2)
         # print('tcSAL 102 index:',index)
         listofinitials=[]
         if index<=len(allnames):
-            print(index, ' is less than ', len(allnames))
-            print('tcSAL 105 index:',index)
-            print('tcSAL 106 firstname2:',firstname2)
-            print('tcSAL 107 len(firstname2): ', len(firstname2))
+            # print(index, ' is less than ', len(allnames))
+            # print('tcSAL 105 index:',index)
+            # print('tcSAL 106 firstname2:',firstname2)
+            # print('tcSAL 107 len(firstname2): ', len(firstname2))
             initial=firstname2[index] # Potential Fix: for single firstname returned only in testSquaredcSAL.py: Q/Command: Replace: `initial=x[0]` `0`with `index`
-            print('tcSAL 109 initial:',initial)
+            # print('tcSAL 109 initial:',initial)
             listofinitials.append(initial)
     return listofinitials # ['Günter', 'Dirk']
 def callerOfManyFirstLetters(allnames):
@@ -122,7 +122,7 @@ def callerOfManyFirstLetters(allnames):
         list.append(firstLetterTest)
     return [list, firstLetterListRebuiltAgain]
 firstLetterListRebuiltAgain=callerOfManyFirstLetters(allnames)
-print('line 111: firstLetterListRebuiltAgain:', firstLetterListRebuiltAgain) # Bug: list from 0 to 32
+# print('line 111: firstLetterListRebuiltAgain:', firstLetterListRebuiltAgain) # Bug: list from 0 to 32
 # line 111: firstLetterListRebuiltAgain: [[['D'], ['i'], ['r'], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]]
 
 #########################################
