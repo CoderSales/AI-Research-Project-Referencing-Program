@@ -17,7 +17,15 @@ def ifHasComma(getNameNumbers):
     return firstnames
 
 firstnames=ifHasComma(getNameNumbers)
-print('line 20 : ifHasComma() returns: firstnames :', firstnames)
+# print('line 20 : ifHasComma() returns: firstnames :', firstnames)
+
+def getfirstnames(getNameNumbers):
+    """
+    for firstnames variable before this function 
+    to be available in other files
+    """
+    firstnames=ifHasComma(getNameNumbers)
+    return firstnames
 
 def returnallnames(firstnames):
     firstnames
@@ -55,8 +63,8 @@ def goThroughallfirstnamesRecompileList(allfirstnames):
     # return itemFromallfirstnames
     return listOfFirstNamesRecompiled
 
-recompiledFirstnameList=goThroughallfirstnamesRecompileList(allfirstnames)
-print('line 59: goThroughallfirstnamesRecompileList() returns: recompiledFirstnameList :',recompiledFirstnameList)
+# recompiledFirstnameList=goThroughallfirstnamesRecompileList(allfirstnames)
+# print('line 59: goThroughallfirstnamesRecompileList() returns: recompiledFirstnameList :',recompiledFirstnameList)
 
 # def getSingleInstanceFromAList(allfirstnames, index):
 def getSingleInstanceFromAList(allfirstnames):
@@ -70,7 +78,7 @@ def getSingleInstanceFromAList(allfirstnames):
 indicesOfFirstNameList = getSingleInstanceFromAList(allfirstnames)
 
 
-print('line 73 :',)
+# print('line 73 :',)
 
 # wanna get:
 # a single instance
