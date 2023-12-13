@@ -93,13 +93,39 @@ def rebuildAllInstances(allfirstnames):
 
 rebuiltFirstNamesList = rebuildAllInstances(allfirstnames)
 
-def getFirstLetter(allnames):
-    allnames=returnallnames(allnames)
-    for x in allnames: # x ~= Gunter
-        initial=x[0]
-    return initial # ['Günter', 'Dirk']
+####################################
 
-getFirstLetter(firstnames)
+def getFirstLetter(allnames, index):
+    allnames=returnallnames(allnames)
+    print('tcSAL 100: allnames, len',allnames, len(allnames))
+    for firstname2 in allnames: # firstname2 ~= Gunter
+        # print('tcSAL 102 firstname2:',firstname2)
+        # print('tcSAL 102 index:',index)
+        listofinitials=[]
+        if index<=len(allnames):
+            print(index, ' is less than ', len(allnames))
+            print('tcSAL 105 index:',index)
+            print('tcSAL 106 firstname2:',firstname2)
+            print('tcSAL 107 len(firstname2): ', len(firstname2))
+            initial=firstname2[index] # Potential Fix: for single firstname returned only in testSquaredcSAL.py: Q/Command: Replace: `initial=x[0]` `0`with `index`
+            print('tcSAL 109 initial:',initial)
+            listofinitials.append(initial)
+    return listofinitials # ['Günter', 'Dirk']
+def callerOfManyFirstLetters(allnames):
+    firstLetterListRebuiltAgain=[]
+    lenallnames=len(allnames)
+    ranlenallnames=range(lenallnames)
+    list=[]
+    for index in ranlenallnames:
+        firstLetterListRebuiltAgain.append(index) # issue? Q/ get item at index? what's that? A/ allnames[index] Q/Command: no replace list with firstLetterListRebuiltAgain
+        firstLetterTest=getFirstLetter(firstnames, index)
+        list.append(firstLetterTest)
+    return [list, firstLetterListRebuiltAgain]
+firstLetterListRebuiltAgain=callerOfManyFirstLetters(allnames)
+print('line 111: firstLetterListRebuiltAgain:', firstLetterListRebuiltAgain) # Bug: list from 0 to 32
+
+#########################################
+
 def replaceFirstNameWithInitial(allnames):
     allnames
     return allnames # ['Günter', 'Dirk']
