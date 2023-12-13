@@ -116,3 +116,21 @@ from ..subpkg2 import mod
 https://stackoverflow.com/questions/1054271/how-to-import-a-python-class-that-is-in-a-directory-above
 
 ____
+
+ImportError: attempted relative import with no known parent package  | Yahoo | https://uk.search.yahoo.com/search?fr=mcafee&type=E210IE1274G0&p=ImportError%3A+attempted+relative+import+with+no+known+parent+package
+
+https://stackoverflow.com/questions/60593604/importerror-attempted-relative-import-with-no-known-parent-package
+
+____
+
+stop auto suggest in vscode | Yahoo | https://uk.search.yahoo.com/search?fr=mcafee&type=E210IE1274G0&p=stop+auto+suggest+in+vscode
+
+People also ask
+
+How do I disable inline suggestions in Visual Studio Code?
+
+**Settings > Text Editor > Suggestions > Inline Suggest: Enabled and unticking the box.**
+
+https://stackoverflow.com/questions/32911977/prevent-autocomplete-in-visual-studio-code
+
+____
