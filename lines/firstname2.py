@@ -14,3 +14,19 @@ def firstinitial(allnames):
                 # print(firstInitialIndices)
                 # firstinitial=allnames[0]
     return firstInitialIndices
+
+def spacesInAuthorString(allnames):
+    
+    spacesList = []
+
+    for letterIndex, letter in enumerate(allnames):
+        
+        if letter==' ':
+            spacesList.append(letterIndex)
+
+    return spacesList
+
+# import firstname
+# allnames=firstname.allnames()
+# spacesInAuthorString=spacesInAuthorString(allnames)
+# print(spacesInAuthorString)
