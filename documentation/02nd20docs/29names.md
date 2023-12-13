@@ -76,3 +76,31 @@ ____
 nltk.org
 
 ____
+
+Next part
+
+____
+
+Yahoo
+
+replace python
+
+https://uk.search.yahoo.com/search?fr=mcafee&type=E210IE1274G0&p=replace+python
+
+____
+
+Result 1:
+
+____
+
+Python String replace() Method
+
+```python
+txt = "I like bananas"
+
+x = txt.replace("bananas", "apples")
+
+print(x)
+```
+
+https://www.w3schools.com/python/ref_string_replace.asp
