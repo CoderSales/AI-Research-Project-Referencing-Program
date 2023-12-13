@@ -104,3 +104,15 @@ print(x)
 ```
 
 https://www.w3schools.com/python/ref_string_replace.asp
+
+____
+
+import from further up folder tree | Yahoo | https://uk.search.yahoo.com/search?fr=mcafee&type=E210IE1274G0&p=import+from+further+up+folder+tree
+
+Result:
+
+from ..subpkg2 import mod
+
+https://stackoverflow.com/questions/1054271/how-to-import-a-python-class-that-is-in-a-directory-above
+
+____
