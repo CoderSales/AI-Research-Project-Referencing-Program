@@ -67,3 +67,34 @@ green = colors[2]
 ```
 
 https://www.pythontutorial.net/python-basics/python-unpack-list/
+
+
+_________
+
+
+## Debugging converting first names to initials bug
+
+testcheckSpacesAuthorList.py", line 117
+    firstLetterListRebuiltAgain = callerOfManyFirstLetters( allnames )
+
+testcheckSpacesAuthorList.py", line 114, in callerOfManyFirstLetters
+	firstLetterTest=getFirstLetter(firstnames, index)
+
+testcheckSpacesAuthorList.py", line 104, in getFirstLetter        
+    initial=x[index] # Potential Fix: for single firstname returned only in testSquaredcSAL.py: Q/Command: Replace: `initial=x[0]` `0`with `index`
+
+IndexError: string index out of range
+
+########
+
+index on 104 out of range
+what is range?
+
+what is x?
+x is Dirk was Gunter
+
+so poss 2 is len
+
+so index of 4 maybe is out of range?
+
+_____
