@@ -4,6 +4,42 @@
 
 AI-Research-Project-Referencing-Program-Attempt
 
+## Recommended Requirements (setup tested for)
+
+Windows
+
+Visual Studio Code
+
+wsl
+
+wsl2
+
+git bash
+
+## To Run
+
+clone or download repository
+
+from root directory run
+
+python -m venv .venv2
+
+source .venv2/Scripts/activate
+
+pip install -r requirements.txt
+
+python main.py
+
+### to edit
+
+replace BibTex.bib
+
+with a BibTex.bib
+
+downloaded from the journal article to be referenced
+
+run above command
+
 ## Table of Contents
 
 Documentation
@@ -41,9 +77,14 @@ TODO: (In Progress) Make an automatic referencing program.
 
 - Input: Take BibTex.bib
 
-- Output: 1 or 2 line Reference
+- Output: Reference
 
-- Curent step: Format 1st line attempted: journal
+- Next step : Trying to replace author first name with
+  initial and dot in author string
+  from author line
+  from
+  file
+  BibTex.bib  
 ```
 
 ## References
