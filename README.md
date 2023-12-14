@@ -2,7 +2,7 @@
 
 ## Description
 
-AI-Research-Project-Referencing-Program-Attempt
+AI Research Project Referencing Program Attempt
 
 ## Recommended Requirements (setup tested for)
 
