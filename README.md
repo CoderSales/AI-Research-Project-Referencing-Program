@@ -4,6 +4,40 @@
 
 AI-Research-Project-Referencing-Program-Attempt
 
+## Recommended Requirements (setup tested for)
+
+Windows
+
+Visual Studio Code
+
+wsl
+
+wsl2
+
+git bash
+
+## To Run
+
+clone or download repository
+
+from root directory run
+
+python -m venv .venv2
+
+source .venv2/Scripts/activate
+
+python main.py
+
+### to edit
+
+replace BibTex.bib
+
+with a BibTex.bib
+
+downloaded from the journal article to be referenced
+
+run above command
+
 ## Table of Contents
 
 Documentation
