@@ -115,7 +115,52 @@ TODO: (In Progress) Make an automatic referencing program.
   from author line
   from
   file
-  BibTex.bib  
+  BibTex.bib
+
+- nicetohave:
+  - for D.R.Y.
+    pass each lines identifier
+    e.g. journal
+    into a single file
+    or function call as an argument
+    and then
+    use same function
+    and send in the following:
+    
+```
+
+```python
+
+listOfIdentifiers=['author', 'journal', <etc.> ]
+
+for identifier in listOfIdentifiers:
+    listOfValues=[]
+    returnValue=functionCall(identifier)
+    listOfValues.append(returnValue)
+listOfValues
+```
+
+```text
+where functionCall
+could be a single file
+or 
+possibly
+a
+function directly in main.py
+called which handles
+for each line of
+BibTex.bib
+returns the corresponding
+value
+
+then need to
+format listOfValues
+into
+output of reference
+(similar to how currently done
+in main.py
+albeit currently
+using print statement(s)) 
 ```
 
 ## References
