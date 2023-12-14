@@ -4,6 +4,20 @@
 
 AI Research Project Referencing Program Attempt
 
+Take in BibTex file
+
+downloaded for a journal article to be referenced
+
+Outputs formatted reference.
+
+(Some manual post editting necessary, like italics 
+
+and 
+
+repllacing Author first names
+
+with initials)
+
 ## Recommended Requirements (setup tested for)
 
 Windows
