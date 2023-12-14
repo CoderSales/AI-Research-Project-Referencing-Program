@@ -26,6 +26,8 @@ python -m venv .venv2
 
 source .venv2/Scripts/activate
 
+pip install -r requirements.txt
+
 python main.py
 
 ### to edit
