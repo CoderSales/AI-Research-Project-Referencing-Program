@@ -79,6 +79,23 @@ TODO: (In Progress) Make an automatic referencing program.
 
 - Output: Reference
 
+- How it works:
+  - main.py calls a couple python files in the root directory like date.py
+    and imports folders files and functions from lines folder
+    - one file either author.py or journal.py
+      was used to develop functionality
+      of going through a line of the BibTex.bib
+      file
+      searching for a starting element
+      stripping this
+      and returning the relevant substring
+      then this was copied and edited
+      to add different functionality for the
+      various parts of the reference 
+      main assembles these
+      and prints reference
+      
+
 - Next step : Trying to replace author first name with
   initial and dot in author string
   from author line
