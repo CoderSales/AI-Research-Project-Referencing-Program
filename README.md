@@ -77,9 +77,14 @@ TODO: (In Progress) Make an automatic referencing program.
 
 - Input: Take BibTex.bib
 
-- Output: 1 or 2 line Reference
+- Output: Reference
 
-- Curent step: Format 1st line attempted: journal
+- Next step : Trying to replace author first name with
+  initial and dot in author string
+  from author line
+  from
+  file
+  BibTex.bib  
 ```
 
 ## References
