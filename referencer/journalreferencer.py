@@ -38,6 +38,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+"""
+14-Dec-2023
+This is a pre-release of:
+https://github.com/CoderSales/AI-Research-Project-Referencing-Program
+
+Release planned for 15-Dec-2023
+"""
+
 # ____________________________________
 
 def author():
