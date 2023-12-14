@@ -160,7 +160,14 @@ output of reference
 (similar to how currently done
 in main.py
 albeit currently
-using print statement(s)) 
+using print statement(s))
+
+Add
+GitHub suggested
+automated workflow
+.github/workflows/python-app.yaml
+tests deploys
+python application
 ```
 
 ## References
