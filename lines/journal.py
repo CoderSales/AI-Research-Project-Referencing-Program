@@ -31,7 +31,9 @@ def journal():
             starter=line
             line=line.lstrip('journal = {')
             line=line.rstrip('},\n')
-
+            line=line.rstrip(' ')
+            line=line.rstrip('},')
             endline=line
     # print(endline)
+    # print(len(endline))
     return endline

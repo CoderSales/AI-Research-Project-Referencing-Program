@@ -28,6 +28,10 @@ def title():
             line=line.lstrip('title = {')
             line=line.rstrip('},\n')
 
+            line=line.rstrip(' ')
+            line=line.rstrip('},')
+
+
             endline=line
     # print(endline)
     return endline
