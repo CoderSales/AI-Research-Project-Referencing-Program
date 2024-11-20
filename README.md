@@ -170,6 +170,46 @@ tests deploys
 python application
 ```
 
+## Troubleshooting
+
+If it's not working:
+
+delete space to the left of key value pairs in BibTex.bib file
+
+e.g.
+
+```BibTex
+@article{vaswani2023attentionneed,
+      title={Attention Is All You Need}, 
+      author={Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+      year={2023},
+      eprint={1706.03762},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/1706.03762}, 
+}
+```
+
+to this:
+
+```BibTex
+@article{vaswani2023attentionneed,
+title={Attention Is All You Need}, 
+author={Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+year={2023},
+eprint={1706.03762},
+archivePrefix={arXiv},
+primaryClass={cs.CL},
+url={https://arxiv.org/abs/1706.03762}, 
+}
+```
+
+also try ensuring BibTex.bib starts with
+
+```BibTex
+@article
+```
+
 ## References
 
 see [documentation](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/tree/main/documentation)
