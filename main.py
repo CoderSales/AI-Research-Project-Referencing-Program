@@ -97,7 +97,26 @@ date=date.date()
 
 # __________________________________
 
-reference = author + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
+import andReplacer
+
+andReplacer = andReplacer.andReplacer()
+
+# __________________________________
+
+# note on import of last or each module above: 
+# import module (file), then do
+# imported_module.the_function_in_the_imported_module()
+# and set the name previously used for the module to be the_function_from_the_module
+
+# __________________________________
+
+# can use either of the following lines:
+
+# reference = author + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
+reference = andReplacer + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
+
+
+# reference = andReplacer.andReplacer()
 
 # print("title =", title)
 # print("journal", journal)
