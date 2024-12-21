@@ -112,8 +112,8 @@ andReplacer = andReplacer.andReplacer()
 
 # can use either of the following lines:
 
-# reference = author + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
-reference = andReplacer + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
+reference1 = author + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
+reference2 = andReplacer + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' + journal + ',' + ' ' + volume + '(' + number + ')' + ' ' + 'pp. ' + pages + ', ' + 'available: ' + doi + ' / ' + url + ' [accessed ' + date + '].'
 
 
 # reference = andReplacer.andReplacer()
@@ -129,4 +129,5 @@ reference = andReplacer + ' (' + year + ') ' + '\'' + title + '\'' + ',' + ' ' +
 # print("\ncheckpoint\n")
 
 
-print(reference)
+print(reference1)
+print(reference2)
