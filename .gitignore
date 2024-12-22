@@ -166,3 +166,4 @@ cython_debug/
 ~$sample.xlsx
 files/*
 .vscode/*
+BibTex.bib
