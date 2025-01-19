@@ -103,7 +103,7 @@ andReplacer = andReplacer.andReplacer()
 
 # __________________________________
 
-from lines import risL1
+from linesRis import risL1
 
 risL1 = risL1.risL1()
 
