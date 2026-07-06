@@ -9,7 +9,7 @@ openpyxl==3.1.2
 pandas==3.0.3
 pylatexenc==3.0a21
 python-dateutil==2.8.2
-pytz==2023.3.post1
+pytz==2026.2
 regex==2026.6.28
 six==1.16.0
 tqdm==4.66.3
