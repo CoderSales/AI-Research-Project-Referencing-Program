@@ -1,4 +1,4 @@
-bibtexparser==2.0.0b4
+bibtexparser==2.0.0b9
 click==8.4.2
 colorama==0.4.6
 et-xmlfile==2.0.0
