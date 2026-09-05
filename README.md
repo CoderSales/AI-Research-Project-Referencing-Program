@@ -44,6 +44,10 @@ python -m venv .venv2
 
 source .venv2/Scripts/activate
 
+If on Mac:
+
+source .venv2/bin/activate 
+
 pip install -r requirements.txt
 
 python main.py
