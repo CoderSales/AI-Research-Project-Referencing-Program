@@ -19,7 +19,7 @@ def firstinitial(allnames):
         spaceIndex=(letterIndex-1)
         # print('test:')
         # print(allnames[commaIndex])
-        if (allnames[commaIndex]==','):
+        if letterIndex >= 2 and allnames[commaIndex] == ',':
         # if ((letterIndex-2)=='/,'):
             # print('comma 2 ago')
             if (allnames[spaceIndex]==' '):

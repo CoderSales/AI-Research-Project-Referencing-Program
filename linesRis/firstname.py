@@ -19,13 +19,13 @@ def firstinitial(allnames):
         spaceIndex=(letterIndex-1)
         # print('test:')
         # print(allnames[commaIndex])
-        if (allnames[commaIndex]==','):
+        if letterIndex >= 2 and allnames[commaIndex] == ',':
         # if ((letterIndex-2)=='/,'):
             # print('comma 2 ago')
             if (allnames[spaceIndex]==' '):
                 # print('space one ago')
                 # print('letterIndex',letterIndex)
-                firstInitialIndices
+                firstInitialIndices.append(letterIndex)
                 # firstinitial=allnames[0]
     return firstInitialIndices
 
