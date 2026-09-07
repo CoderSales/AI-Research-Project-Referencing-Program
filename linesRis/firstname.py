@@ -66,4 +66,5 @@ def printFromCommaIndex(allnames, checkForComma):
     
     
 
+    charAtEachCommaIndex = [allnames[index] for index in checkForComma]
     return charAtEachCommaIndex
