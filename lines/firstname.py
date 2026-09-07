@@ -25,7 +25,7 @@ def firstinitial(allnames):
             if (allnames[spaceIndex]==' '):
                 # print('space one ago')
                 # print('letterIndex',letterIndex)
-                firstInitialIndices
+                firstInitialIndices.append(letterIndex)
                 # firstinitial=allnames[0]
     return firstInitialIndices
 
