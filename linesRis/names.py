@@ -4,6 +4,7 @@ import re
 f_name="Bibtex.bib"
 file = open("Bibtex.bib", 'r', encoding="utf8")
 holder=""
+len_journal = len('journal={')
 import author
 
 author=author.author()

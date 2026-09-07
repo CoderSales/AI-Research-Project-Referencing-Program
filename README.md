@@ -221,3 +221,5 @@ also try ensuring BibTex.bib starts with
 ## References
 
 see [documentation](https://github.com/CoderSales/AI-Research-Project-Referencing-Program/tree/main/documentation)
+
+ChatGPT
