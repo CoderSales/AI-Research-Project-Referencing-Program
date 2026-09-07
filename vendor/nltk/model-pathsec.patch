@@ -1,0 +1,153 @@
+--- a/nltk/parse/transitionparser.py
++++ b/nltk/parse/transitionparser.py
+@@ -7,6 +7,7 @@
+ # For license information, see LICENSE.TXT
+ 
+ import pickle
++from nltk import pathsec
+ import tempfile
+ from copy import deepcopy
+ from operator import itemgetter
+@@ -529,6 +530,7 @@
+         :type modelfile : str
+         """
+ 
++        pathsec.validate_path(modelfile, context="TransitionParser.train")
+         try:
+             input_file = tempfile.NamedTemporaryFile(
+                 prefix="transition_parse.train", dir=tempfile.gettempdir(), delete=False
+@@ -561,7 +563,8 @@
+ 
+             model.fit(x_train, y_train)
+             # Save the model to file name (as pickle)
+-            pickle.dump(model, open(modelfile, "wb"))
++            with pathsec.open(modelfile, "wb") as model_file:
++                pickle.dump(model, model_file)
+         finally:
+             remove(input_file.name)
+ 
+@@ -580,7 +583,7 @@
+         # e.g. os.system -- raises UnpicklingError instead of executing. See
+         # nltk/picklesec.py and huntr report
+         # https://huntr.com/bounties/38abc191-0525-42a1-96fd-262c1c187012
+-        with open(modelFile, "rb") as f:
++        with pathsec.open(modelFile, "rb") as f:
+             model = allowlisted_pickle_load(
+                 f,
+                 allowed_modules=_MODEL_ALLOWED_MODULES,
+--- a/nltk/tag/perceptron.py
++++ b/nltk/tag/perceptron.py
+@@ -17,7 +17,7 @@
+ from pathlib import Path
+ from tempfile import gettempdir
+ 
+-from nltk import jsontags
++from nltk import jsontags, pathsec
+ from nltk.data import FileSystemPathPointer, find, open_datafile
+ from nltk.tag.api import TaggerI
+ 
+@@ -175,12 +175,12 @@
+ 
+     def save(self, path):
+         """Save the model weights as json"""
+-        with open(path, "w") as fout:
++        with pathsec.open(path, "w") as fout:
+             return json.dump(self.weights, fout)
+ 
+     def load(self, path):
+         """Load the json model weights."""
+-        with open(path) as fin:
++        with pathsec.open(path) as fin:
+             self.weights = json.load(fin)
+ 
+     def encode_json_obj(self):
+@@ -332,47 +332,16 @@
+     def save_to_json(self, lang="xxx", loc=None):
+         if not loc:
+             loc = self.save_dir
+-        # On POSIX the default TRAINED_TAGGER_PATH is a shared, world-writable
+-        # temp dir (/tmp) and the save dir is a *guessable* name in it, so a
+-        # local attacker can pre-plant or race a symlink at ``loc``. A plain
+-        # ``islink`` pre-check is non-atomic (TOCTOU) and misses it once created;
+-        # ``_open_private_model_dir`` instead creates/re-opens the leaf atomically
+-        # with O_NOFOLLOW|O_DIRECTORY, verifies it is a real, user-owned,
+-        # non-world-writable directory, and returns a pinned fd we write relative
+-        # to (CWE-59/377/378).
+-        #
+-        # On Windows ``%TEMP%`` is per-user and ACL-protected (no such squat), and
+-        # ``os.open`` cannot open a directory as a descriptor there, so use a
+-        # plain create + write.
+-        if os.name != "posix":
++        # Check the caller's destination before creating or authorizing it.
++        pathsec.validate_path(loc, context="PerceptronTagger.save_to_json")
++        if os.name == "posix":
++            dir_fd = _open_private_model_dir(loc)
++            os.close(dir_fd)
++        else:
+             os.makedirs(loc, exist_ok=True)
+-            _authorize_private_dir(loc)
+-            for param, json_file in zip(self.encode_json_obj(), self.param_files(lang)):
+-                with open(path_join(loc, json_file), "w") as fout:
+-                    json.dump(param, fout)
+-            return
+-
+-        dir_fd = _open_private_model_dir(loc)
+-        try:
+-            _authorize_private_dir(loc)
+-
+-            # Write each model file relative to the pinned directory fd (where
+-            # supported) with O_NOFOLLOW (0600), so neither the dir nor the file
+-            # can be redirected outside the verified directory after the check.
+-            use_dir_fd = os.open in os.supports_dir_fd
+-
+-            def _no_follow_opener(path, flags):
+-                extra = {"dir_fd": dir_fd} if use_dir_fd else {}
+-                return os.open(
+-                    path, flags | getattr(os, "O_NOFOLLOW", 0), 0o600, **extra
+-                )
+-
+-            for param, json_file in zip(self.encode_json_obj(), self.param_files(lang)):
+-                target = json_file if use_dir_fd else path_join(loc, json_file)
+-                with open(target, "w", opener=_no_follow_opener) as fout:
+-                    json.dump(param, fout)
+-        finally:
+-            os.close(dir_fd)
++        for param, json_file in zip(self.encode_json_obj(), self.param_files(lang)):
++            with pathsec.open(path_join(loc, json_file), "w", required_root=loc) as fout:
++                json.dump(param, fout)
+ 
+     def load_from_json(self, lang="eng", loc=None):
+         # Automatically find path to the tagger if location is not specified.
+--- a/nltk/classify/maxent.py
++++ b/nltk/classify/maxent.py
+@@ -1582,24 +1582,26 @@
+ 
+ def save_maxent_params(wgt, mpg, lab, aon, tab_dir="/tmp"):
+ 
++    from nltk import pathsec
+     from os import mkdir
+     from os.path import isdir
+ 
+     from nltk.tabdata import MaxentEncoder
+ 
++    pathsec.validate_path(tab_dir, context="save_maxent_params")
+     menc = MaxentEncoder()
+     if not isdir(tab_dir):
+         mkdir(tab_dir)
+ 
+     print(f"Saving Maxent parameters in {tab_dir}")
+ 
+-    with open(f"{tab_dir}/weights.txt", "w") as f:
++    with pathsec.open(f"{tab_dir}/weights.txt", "w", required_root=tab_dir) as f:
+         f.write(f"{menc.list2txt(map(repr, wgt.tolist()))}")
+-    with open(f"{tab_dir}/mapping.tab", "w") as f:
++    with pathsec.open(f"{tab_dir}/mapping.tab", "w", required_root=tab_dir) as f:
+         f.write(f"{menc.tupdict2tab(mpg)}")
+-    with open(f"{tab_dir}/labels.txt", "w") as f:
++    with pathsec.open(f"{tab_dir}/labels.txt", "w", required_root=tab_dir) as f:
+         f.write(f"{menc.list2txt(lab)}")
+-    with open(f"{tab_dir}/alwayson.tab", "w") as f:
++    with pathsec.open(f"{tab_dir}/alwayson.tab", "w", required_root=tab_dir) as f:
+         f.write(f"{menc.ivdict2tab(aon)}")
+ 
+ 
