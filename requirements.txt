@@ -6,7 +6,7 @@ et_xmlfile==2.0.0
 iniconfig==2.3.0
 joblib==1.6.0
 ./vendor/nltk/nltk-3.10.3+pathsec1-py3-none-any.whl
-numpy==2.5.2
+numpy==2.5.3
 openpyxl==3.1.5
 packaging==26.3
 pandas==3.0.5
