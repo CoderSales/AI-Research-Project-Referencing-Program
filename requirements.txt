@@ -18,5 +18,5 @@ python-dateutil==2.9.0.post0
 pytz==2026.3.post1
 regex==2026.9.10
 six==1.17.0
-tqdm==4.70.0
+tqdm==4.70.1
 tzdata==2026.4
