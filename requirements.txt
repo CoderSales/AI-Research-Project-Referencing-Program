@@ -16,7 +16,7 @@ pylatexenc==3.0b1
 pytest==9.2.0
 python-dateutil==4.0.0
 pytz==2026.5
-regex==2026.11.9
+regex==2026.11.19
 six==1.17.0
 tqdm==4.70.1
 tzdata==2026.6
